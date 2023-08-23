@@ -1,0 +1,57 @@
+body {
+  position: relative;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: scroll;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Modal */
+.delete-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(128, 128, 128, 0.276);
+  display: grid;
+  place-items: center;
+  z-index: 999;
+}
+
+.modal-inner {
+  background: white;
+  padding: 70px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+body img{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  opacity: .3;
+  background-size: cover;
+  z-index: -1;
+}
+.dark{
+  min-height: 100vh;
+  background: rgb(0, 0, 0);
+  color: white !important;
+
+}
+.light{
+  min-height: 100vh;
+  background: rgb(255, 255, 255,.5) ;
+  color: black !important;
+}
