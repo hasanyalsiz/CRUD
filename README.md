@@ -3,35 +3,37 @@
 - Create Read Update Delete
 - Oluştur Oku Düzenle Sil
 
-* Form içersinden kitap ismini al.
-* - Eğerki kitap ismi girilmişse:
-* - Ekle butonuna tıklanınca kitap ismiyle yeni bir obje oluştur
-* - Eklenme Tarihi | Kitap İsmi | id | okunduMu
-* - Oluşan objeyi kitaplatın tümünü tuttuğumuz state'e aktar
-* - inputu temizle
+![](crud.gif)
 
-* `books` state'inde tutulan kiatpları al ve ekrana bas
-* - Eğer state boşsa "Henüz kitap eklenmedi " ekrana bas
-* - Dizideki herbir kitap için ekrana `BookCard` bilşeni bas
-* - `BookCard` 'a prop olarak ekrana basılacak kitap bilgilerini aktar
+# Kitap Listesi Programı 
 
-* Kitap Silme:
-* - herhangi bir kitabın sil butonuna basıldığında fonk. çalıştır
-* - fonksiyona silincek id 'sine gönder
-* - bu fonksiyon ekran modal'ı açsın
-* - ve modal'a slinecekID'yi gönder
+Bu program, kullanıcıların okudukları veya okumayı planladıkları kitapları yönetmelerine yardımcı olmak için tasarlanmış basit bir kitap listesi uygulamasıdır. Kullanıcılar, program aracılığıyla kitap ekleyebilir, düzenleyebilir, işaretleyebilir ve silebilirler.
 
-* Okundu İşaretleme:
-* - okundu butonuna tıklanınca fonk çalıştır.
-* - bu fonksiyona kitabın değerlerini gönder
-* - kitabın isRead değerini terne çevir
-* - state'i güncelle
+## Özellikler
 
-* Düzenleme:
-* - Düzenle butonuna tıklanılıdğında fonk. çalışsın
-* - Fonk. modal'ı açsın ve düzenlenicek elemanı state'e aktarsın
-* - düzenlenicek elman modaldaki inputa gelsin (prop gönder)
-* - input değiştiğinde düzenlenicek elmanın title'ını değiştir
-* - vazgeç > modal'ı kapat
-* - kaydet > düzenlenicek elemanı `books` state'ine aktarıcak fonksiyonu çalıştır
-# CRUD
+- Yeni Kitap Ekleme: Kullanıcılar kitap adını girdikten sonra yeni bir kitap ekleyebilirler.
+- Okundu / Okunmadı İşaretleme: Kullanıcılar ekledikleri kitapları okundu veya okunmadı olarak işaretleyebilirler.
+- Düzenleme: Kullanıcılar mevcut kitapların adını düzenleyebilirler.
+- Silme: Kullanıcılar artık listelerinde görmek istemedikleri kitapları silebilirler.
+
+## Kullanım
+
+1. Programı başlatın.
+2. Ana menüden "Yeni Kitap Ekle" seçeneğini seçin.
+3. Kitabın adını girin ve "Ekle" butonuna tıklayın.
+4. Ana menüye dönerek eklediğiniz kitabı "Okundu" veya "Okunmadı" olarak işaretleyebilirsiniz.
+5. Ana menüden "Kitapları Düzenle" seçeneğini seçerek kitap adlarını düzenleyebilirsiniz.
+6. Ana menüden "Kitap Sil" seçeneğini seçerek listeden kitap silebilirsiniz.
+
+
+## Kurulum
+
+1. Bu depoyu bilgisayarınıza indirin veya klonlayın.
+2. Terminal veya komut istemcisini açın ve depo dizinine gidin.
+3. `npm start` komutunu kullanarak programı başlatın.
+
+## Katkı
+
+Katkıda bulunmak isterseniz, lütfen bir çekme isteği (pull request) oluşturun. Büyük değişiklikler yapmadan önce, değişikliklerinizi tartışmak için bir konu (issue) açmaktan çekinmeyin.
+
+
